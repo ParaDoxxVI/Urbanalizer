@@ -1,0 +1,1 @@
+[<overpy.Node id=4488951320 lat=41.4064404 lon=2.1487379>, <overpy.Node id=6358587749 lat=41.4104658 lon=2.1373022>, <overpy.Node id=7860538585 lat=41.3882608 lon=2.1474859>, <overpy.Node id=7995153792 lat=41.4205002 lon=2.1907368>, <overpy.Node id=8494631770 lat=41.3560430 lon=2.1386437>]

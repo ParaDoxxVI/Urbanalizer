@@ -1,0 +1,12 @@
+[out:json][timeout:25];
+area["name"="Berlin"]["admin_level"="4"]->.berlin;
+(
+  node["building"="office"](area.berlin);
+  way["building"="office"](area.berlin);
+  relation["building"="office"](area.berlin);
+
+);
+// Output the results
+out body;
+>;
+out skel qt;

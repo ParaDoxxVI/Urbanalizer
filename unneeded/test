@@ -1,0 +1,52 @@
+/*
+This query identifies potential city centers in Berlin by looking for:
+1. Administrative centers
+2. Main shopping areas
+3. Major transportation hubs
+4. Tourist attractions and landmarks
+5. Commercial districts
+*/
+
+// Define the area for Berlin
+[out:json][timeout:25];
+area["name"="Berlin"]["admin_level"="4"]->.berlin;
+
+// Collect key points of interest within Berlin
+(
+  // Administrative centers (town halls, government buildings)
+  node["amenity"="townhall"](area.berlin);
+  way["amenity"="townhall"](area.berlin);
+  relation["amenity"="townhall"](area.berlin);
+
+  node["office"="government"](area.berlin);
+  way["office"="government"](area.berlin);
+
+  // Major commercial/shopping areas
+  node["shop"="mall"](area.berlin);
+  way["shop"="mall"](area.berlin);
+
+  // Major pedestrian zones often indicate city centers
+  way["highway"="pedestrian"][!"service"](area.berlin);
+
+  // Main public squares
+  node["place"="square"](area.berlin);
+  way["place"="square"](area.berlin);
+
+  // Major transport hubs
+  node["public_transport"="station"]["station"="subway"](area.berlin);
+  node["railway"="station"]["station"="major"](area.berlin);
+
+  // Important tourist landmarks
+  node["tourism"="attraction"]["name"](area.berlin);
+  way["tourism"="attraction"]["name"](area.berlin);
+  relation["tourism"="attraction"]["name"](area.berlin);
+
+  // Historic city cores
+  way["place"="quarter"]["name"="Mitte"](area.berlin);
+  relation["place"="quarter"]["name"="Mitte"](area.berlin);
+);
+
+// Output the results
+out body;
+>;
+out skel qt;

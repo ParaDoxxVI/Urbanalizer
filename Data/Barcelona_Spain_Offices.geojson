@@ -1,0 +1,97 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-03-29T10:03:12Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4488951320",
+        "building": "office",
+        "name": "SERVICIO PÚBLICO DE EMPLEO ESTATAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1487379,
+          41.4064404
+        ]
+      },
+      "id": "node/4488951320"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6358587749",
+        "building": "office",
+        "name": "American Nike SL",
+        "office": "company"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1373022,
+          41.4104658
+        ]
+      },
+      "id": "node/6358587749"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7860538585",
+        "building": "office",
+        "name": "Institut d'Estudis Fotogràfics de Catalunya",
+        "short_name": "IEFC",
+        "website": "https://www.iefc.cat",
+        "wikidata": "Q11926736",
+        "wikipedia": "ca:Institut d'Estudis Fotogràfics de Catalunya"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1474859,
+          41.3882608
+        ]
+      },
+      "id": "node/7860538585"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7995153792",
+        "building": "office",
+        "name": "Tresoreria General de la Seguretat Social",
+        "office": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1907368,
+          41.4205002
+        ]
+      },
+      "id": "node/7995153792"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8494631770",
+        "building": "office",
+        "government": "administrative",
+        "name": "Generalitat de Catalunya - Departament de Justícia",
+        "name:ca": "Generalitat de Catalunya - Departament de Justícia",
+        "office": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1386437,
+          41.356043
+        ]
+      },
+      "id": "node/8494631770"
+    }
+  ]
+}
